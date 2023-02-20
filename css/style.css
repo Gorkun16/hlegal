@@ -356,7 +356,7 @@ input {
   padding-bottom: 60px;
 }
 
-.main-services::after {
+.bg-1 {
   display: block;
   content: "";
   width: 335px;
@@ -365,6 +365,18 @@ input {
   border-radius: 0px 0px 12px 12px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bg-2 {
+  display: block;
+  content: "";
+  width: 295px;
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .h3-pink {
@@ -440,6 +452,12 @@ input {
     font-size: 38px;
     line-height: 46px;
   }
+  .bg-1 {
+    width: 728px;
+  }
+  .bg-2 {
+    width: 688px;
+  }
   .logos {
     display: flex;
     flex-wrap: wrap;
@@ -466,6 +484,12 @@ input {
   .services-block {
     width: 261px;
   }
+  .bg-1 {
+    width: 984px;
+  }
+  .bg-2 {
+    width: 944px;
+  }
 }
 @media (min-width: 1440px) {
   .wrapper {
@@ -474,6 +498,12 @@ input {
   .services-block {
     width: 400px;
   }
+  .bg-1 {
+    width: 1400px;
+  }
+  .bg-2 {
+    width: 1360px;
+  }
 }
 @media (min-width: 1920px) {
   .wrapper {
@@ -481,6 +511,12 @@ input {
   }
   .services-block {
     width: 493px;
+  }
+  .bg-1 {
+    width: 1880px;
+  }
+  .bg-2 {
+    width: 1840px;
   }
 }
 .logos-main {
