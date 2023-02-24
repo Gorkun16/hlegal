@@ -463,6 +463,8 @@ input {
   .hero {
     font-size: 38px;
     line-height: 46px;
+  }
+  .hero-services {
     margin-bottom: 60px;
   }
   .logos {
@@ -483,6 +485,11 @@ input {
   .logos-main {
     width: 25%;
   }
+  .slider-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
 }
 @media (min-width: 1440px) {
   .services-block {
@@ -491,7 +498,8 @@ input {
 }
 @media (min-width: 1720px) {
   .logos {
-    border-radius: 100px;
+    overflow: hidden;
+    border-radius: 10px;
   }
 }
 @media (min-width: 1920px) {
@@ -503,8 +511,6 @@ input {
   margin-left: auto;
   margin-right: auto;
   max-width: 1720px;
-  overflow: hidden;
-  border-radius: 10px;
 }
 .logos-main {
   height: 120px;
@@ -547,6 +553,57 @@ input {
 }
 .logos-12 {
   background: #000000;
+}
+
+.slider {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.slider-content {
+  padding: 30px;
+}
+.slider-bg {
+  background-color: #F5F5FA;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.slider-bg-img {
+  background-image: url(../assets/images/slider-image.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+.slider-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.slider-name-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+  margin: 0;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+}
+.circle-slider {
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.circle-slider-last {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
