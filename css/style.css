@@ -358,9 +358,11 @@ input {
 
 .nav-main-screen {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   gap: 30px;
   margin-bottom: 36px;
+  padding-bottom: 0;
+  padding-left: 30px;
 }
 .nav-main-screen a {
   font-weight: 700;
@@ -626,13 +628,11 @@ input {
   }
   .nav-main-screen {
     margin-bottom: 40px;
+    padding-left: 60px;
   }
   .nav-main-screen a {
     font-size: 38px;
     line-height: 46px;
-  }
-  .advantages {
-    margin-top: 50px;
   }
   .h2-mobile {
     font-size: 30px;
@@ -702,6 +702,10 @@ input {
   .h2-mobile::before {
     width: 0%;
   }
+  .advantages .wrapper {
+    padding: 0;
+    padding-right: 60px;
+  }
   .nav-main-screen {
     flex-direction: column;
     align-items: flex-end;
@@ -719,8 +723,7 @@ input {
     right: -64px;
   }
   .advantages {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0;
     width: calc(50% - 62px);
     margin-top: 0;
   }
@@ -764,7 +767,8 @@ input {
     width: calc(33.33% - 40px);
   }
   .introduction {
-    width: 580px;
+    min-width: 580px;
+    max-width: 860px;
   }
 }
 @media (min-width: 1720px) {
@@ -776,7 +780,7 @@ input {
 }
 @media (min-width: 1920px) {
   .introduction {
-    width: 100%;
+    width: 860px;
   }
   .services-block {
     width: calc(33.33% - 40px);

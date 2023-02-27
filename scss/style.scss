@@ -9,9 +9,11 @@
 
 .nav-main-screen {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     gap: 30px;
     margin-bottom: 36px;
+    padding-bottom: 0;
+    padding-left: 30px;
 
     a {
         font-weight: 700;
@@ -301,15 +303,12 @@
 
     .nav-main-screen {
         margin-bottom: 40px;
+        padding-left: 60px;
     
         a {
             font-size: 38px;
             line-height: 46px;
         }
-    }
-
-    .advantages {
-        margin-top: 50px;
     }
 
     .h2-mobile {
@@ -396,6 +395,11 @@
         width: 0%;
     }
 
+    .advantages .wrapper {
+        padding: 0;
+        padding-right: 60px;
+    }
+
     .nav-main-screen {
         flex-direction: column;
         align-items: flex-end;
@@ -415,8 +419,7 @@
     }
     
     .advantages {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 0;
         width: calc(50% - 62px);
         margin-top: 0;
     }
@@ -474,7 +477,8 @@
     }
 
     .introduction {
-        width: 580px;
+        min-width: 580px;
+        max-width: 860px;
     }
 }
 
@@ -489,7 +493,7 @@
 @media (min-width: 1920px) {
 
     .introduction {
-        width: 100%;
+        width: 860px;
     }
 
     .services-block {
