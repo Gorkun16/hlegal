@@ -1,9 +1,11 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background: #F5F5FA;
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
 
     &-info {
         
@@ -37,11 +39,6 @@
         color: #46466E;
         margin-top: 0;
         margin-bottom: 10px;
-
-        &::before {
-            content: "";
-            background-image: url(../assets/images/facebook-footer.svg);
-        }
     }
 
     &-email {
