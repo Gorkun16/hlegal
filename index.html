@@ -13,35 +13,42 @@
 <body>
     <div class="background">
         <header class="header">
-            <div>
-                <div class="header-top">
-                    <nav class="nav-top">
-                        <a href="#" class="nav-top__item">УК</a>
-                        <a href="#" class="nav-top__item">РУ</a>
-                        <a href="#" class="nav-top__item nav-top__item--active">EN</a>
+            <div class="header-full">
+                <div class="header-info">
+                    <nav class="header-lang nav-tablet-top">
+                        <a href="#" class="header-lang__item">УК</a>
+                        <a href="#" class="header-lang__item">РУ</a>
+                        <a href="#" class="header-lang__item header-lang__item--active">EN</a>
                     </nav>
-                    <p class="header__adress">Kyiv, Mechnikova str., 14/1</p>
-                    <a href="tel:0800 211 927" class="nav-top__phone">0800 211 927</a>
-                    <a href="#"><img src="./assets/images/facebook-header.svg" class="header__fb" alt="facebook"></a>
+                    <p class="header-adress nav-tablet-top">Kyiv, Mechnikova str., 14/1</p>
+                    <a href="tel:0800211927" class="header-phone nav-tablet-top">0800 211 927</a>
+                    <a href="#"><img src="./assets/images/facebook-header.svg" class="header-fb nav-tablet-top" alt="facebook"></a>
                 </div>
-                <div class="header-bottom">
-                    <div class="header-bottom__left">
+                <div class="header-graphic">
+                    <div class="header-graphic-left">
                         <a href="#">
-                            <img src="./assets/images/logo-header-mobile.svg" class="header-bottom__logo" alt="logo">
+                            <img src="./assets/images/logo-header-mobile.svg" class="header-graphic-logo" alt="logo" width="70" height="32">
                         </a>
-                        <a href="#" class="header-bottom__link">services</a>
+                        <a href="#" class="header-graphic-linkmb">services</a>
                     </div>
-                    <div class="header-bottom__menu-btn">
+                    <button type="button" class="burger">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </button>
+                </div>
+                <div class="header-menu">
+                    <a href="#">about us</a>
+                    <a href="#">services</a>
+                    <a href="#">team</a>
+                    <a href="#">publications</a>
+                    <a href="#">contact</a>
                 </div>
             </div>
-            <h1 class="header__title">
+            <h1 class="header-title">
                 you legal solutions provider
             </h1>
-            <div class="header__scroll">
+            <div class="header-scroll">
                 <a href="#"></a>
             </div>
         </header>
@@ -110,97 +117,114 @@
             </div>
         </section>
     </div>
-    <div class="wrapper slider">
-        <div class="slider-bg">
-            <div class="slider-blocks">
-               <picture>
-                        <source srcset="./assets/images/slider-image-horiz.jpg" media="(min-width: 1440px)" />
-                        <img src="./assets/images/slider-image.jpg" class="slider-bg-img" alt="Олександр Олександровський" />
-                </picture>
-                <div class="slider-content">
-                    <a href="#"><span class="subtitle">команда</span></a>
-                    <h3 class="hero">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
-                    <p class="slider-name">Олександр Олександровський</p>
-                    <p class="slider-name-position">Керуючий партнер</p>
+    <main>
+        <div class="wrapper slider">
+            <div class="slider-bg">
+                <div class="slider-blocks">
+                   <picture>
+                            <source srcset="./assets/images/slider-image-horiz.jpg" media="(min-width: 1440px)" />
+                            <img src="./assets/images/slider-image.jpg" class="slider-bg-img" alt="Олександр Олександровський" />
+                    </picture>
+                    <div class="slider-content">
+                        <a href="#"><span class="subtitle">команда</span></a>
+                        <h3 class="hero">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+                        <p class="slider-name">Олександр Олександровський</p>
+                        <p class="slider-name-position">Керуючий партнер</p>
+                    </div>
                 </div>
             </div>
+            <div class="circle">
+                <button class="circle-slider circle-slider-active"></button>
+                <button class="circle-slider"></button>
+                <button class="circle-slider circle-slider-last"></button>
+            </div>
         </div>
-        <div class="circle">
-            <button class="circle-slider circle-slider-active"></button>
-            <button class="circle-slider"></button>
-            <button class="circle-slider circle-slider-last"></button>
-        </div>
-    </div>
-    <section class="logos">
-        <a href="#" class="logos-main logos-1">
-            <img src="./assets/images/hillel-logo.png" alt="hillel" width="217" height="48">
-        </a>
-        <a href="#" class="logos-main logos-2">
-            <img src="./assets/images/wannabiz-logo.png" alt="wannabiz" width="199" height="32">
-        </a>
-        <a href="#" class="logos-main logos-3">
-            <img src="./assets/images/tapgerine-logo.png" alt="tapgerine" width="179" height="44">
-        </a>
-        <a href="#" class="logos-main logos-4">
-            <img src="./assets/images/3dlook-logo.png" alt="3dlook" width="180" height="42">
-        </a>
-        <a href="#" class="logos-main logos-5">
-            <img src="./assets/images/orangear-logo.png" alt="orangear" width="174" height="44">
-        </a>
-        <a href="#" class="logos-main logos-6">
-            <img src="./assets/images/adtelligint-logo.png" alt="adtelligint" width="195" height="48">
-        </a>
-        <a href="#" class="logos-main logos-7">
-            <img src="./assets/images/clickky-logo.png" alt="clickky" width="138" height="61">
-        </a>
-        <a href="#" class="logos-main logos-8">
-            <img src="./assets/images/ecoleasing-logo.png" alt="ecoleasing" width="146" height="76">
-        </a>
-        <a href="#" class="logos-main logos-9">
-            <img src="./assets/images/infratek-logo.png" alt="infratek" width="182" height="60">
-        </a>
-        <a href="#" class="logos-main logos-10">
-            <img src="./assets/images/citypark-logo.png" alt="citypark" width="181" height="38">
-        </a>
-        <a href="#" class="logos-main logos-11">
-            <img src="./assets/images/artprintstudio-logo.png" alt="artprintstudio" width="189" height="46">
-        </a>
-        <a href="#" class="logos-main logos-12">
-            <img src="./assets/images/ultimate-card-logo.png" alt="ultimate-card" width="152" height="95">
-        </a>
-    </section>
-    <section class="publications">
+        <section class="logos">
+            <a href="#" class="logos-main logos-1">
+                <img src="./assets/images/hillel-logo.png" alt="hillel" width="217" height="48">
+            </a>
+            <a href="#" class="logos-main logos-2">
+                <img src="./assets/images/wannabiz-logo.png" alt="wannabiz" width="199" height="32">
+            </a>
+            <a href="#" class="logos-main logos-3">
+                <img src="./assets/images/tapgerine-logo.png" alt="tapgerine" width="179" height="44">
+            </a>
+            <a href="#" class="logos-main logos-4">
+                <img src="./assets/images/3dlook-logo.png" alt="3dlook" width="180" height="42">
+            </a>
+            <a href="#" class="logos-main logos-5">
+                <img src="./assets/images/orangear-logo.png" alt="orangear" width="174" height="44">
+            </a>
+            <a href="#" class="logos-main logos-6">
+                <img src="./assets/images/adtelligint-logo.png" alt="adtelligint" width="195" height="48">
+            </a>
+            <a href="#" class="logos-main logos-7">
+                <img src="./assets/images/clickky-logo.png" alt="clickky" width="138" height="61">
+            </a>
+            <a href="#" class="logos-main logos-8">
+                <img src="./assets/images/ecoleasing-logo.png" alt="ecoleasing" width="146" height="76">
+            </a>
+            <a href="#" class="logos-main logos-9">
+                <img src="./assets/images/infratek-logo.png" alt="infratek" width="182" height="60">
+            </a>
+            <a href="#" class="logos-main logos-10">
+                <img src="./assets/images/citypark-logo.png" alt="citypark" width="181" height="38">
+            </a>
+            <a href="#" class="logos-main logos-11">
+                <img src="./assets/images/artprintstudio-logo.png" alt="artprintstudio" width="189" height="46">
+            </a>
+            <a href="#" class="logos-main logos-12">
+                <img src="./assets/images/ultimate-card-logo.png" alt="ultimate-card" width="152" height="95">
+            </a>
+        </section>
+        <section class="publications">
+            <div class="wrapper">
+                <a href="#"><span class="subtitle">Publications</span></a>
+                <h3 class="hero">We have something to tell</h3>
+                <div class="publications-all">
+                    <div class="publication">
+                        <img src="./assets/images/publication-1.jpg" class="publication-img" alt="Equity associate">
+                        <div class="publication-content">
+                            <a href="#" class="publication-h4-blue">Equity associate</a>
+                            <p class="publication-date">April 22</p>
+                            <p class="publication-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I</p>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <img src="./assets/images/publication-2.jpg" class="publication-img" alt="Penalty for the Good Corporation">
+                        <div class="publication-content">
+                            <a href="#" class="publication-h4-blue">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+                            <p class="publication-date">September 29</p>
+                            <p class="publication-description">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <img src="./assets/images/publication-3.jpg" class="publication-img" alt="Millennial Testament">
+                        <div class="publication-content">
+                            <a href="#" class="publication-h4-blue">Millennial Testament</a>
+                            <p class="publication-date">August 19</p>
+                            <p class="publication-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <div class="wrapper">
-            <a href="#"><span class="subtitle">Publications</span></a>
-            <h3 class="hero">We have something to tell</h3>
-            <div class="publications-all">
-                <div class="publication">
-                    <img src="./assets/images/publication-1.jpg" class="publication-img" alt="Equity associate">
-                    <div class="publication-content">
-                        <a href="#" class="publication-h4-blue">Equity associate</a>
-                        <p class="publication-date">April 22</p>
-                        <p class="publication-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I</p>
-                    </div>
-                </div>
-                <div class="publication">
-                    <img src="./assets/images/publication-2.jpg" class="publication-img" alt="Penalty for the Good Corporation">
-                    <div class="publication-content">
-                        <a href="#" class="publication-h4-blue">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
-                        <p class="publication-date">September 29</p>
-                        <p class="publication-description">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-                    </div>
-                </div>
-                <div class="publication">
-                    <img src="./assets/images/publication-3.jpg" class="publication-img" alt="Millennial Testament">
-                    <div class="publication-content">
-                        <a href="#" class="publication-h4-blue">Millennial Testament</a>
-                        <p class="publication-date">August 19</p>
-                        <p class="publication-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment.</p>
-                    </div>
-                </div>
+            <div class="footer-info">
+                <span>
+                    <p class="footer-adress">Kyiv, Mechnikova str., 14/1</p>
+                    <a href="" class="footer-map">On map</a>
+                </span>
+                <span>
+                    <a href="tel:0800211927" class="footer-phone">0800 211 927</a>
+                    <a href="mailto:contact@forstudy.space" class="footer-email">contact@forstudy.space</a>
+                </span>
             </div>
-            
+            <address class="footer-copyright">© 2021 HLEGAL Law company, LLC</address>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

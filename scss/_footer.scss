@@ -1,0 +1,63 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #F5F5FA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &-info {
+        
+    }
+
+    &-adress {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &-map {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &-phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: #46466E;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        &::before {
+            content: "";
+            background-image: url(../assets/images/facebook-footer.svg);
+        }
+    }
+
+    &-email {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #24A3FF;
+    }
+
+    &-copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #B3B3BA;
+        margin-bottom: 0;
+    }
+}
