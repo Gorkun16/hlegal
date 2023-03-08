@@ -235,7 +235,10 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
     &-img {
         display: block;
@@ -494,6 +497,10 @@
 }
 
 @media (min-width: 1920px) {
+    .wrapper {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
 
     .introduction {
         width: 860px;

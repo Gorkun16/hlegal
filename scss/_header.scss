@@ -106,6 +106,7 @@
         display: grid;
         grid-template-columns: 1fr 32px;
         padding: 15px;
+        align-items: center;
 
         &-left {
             display: grid;
@@ -128,7 +129,7 @@
     
     &-title {
         position: relative;
-        z-index: 2;
+        z-index: 0;
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
@@ -143,7 +144,7 @@
 
     &-scroll {
         position: relative;
-        z-index: 2;
+        z-index: 0;
         width: 42px;
         height: 42px;
         opacity: 0.5;
@@ -163,14 +164,14 @@
     .header {
         &-full {
             display: grid;
-            grid-template-rows: 1fr 60px 1fr;
+            grid-template-rows: 0.5fr 90px;
         }
+
         &-info {
             display: flex;
-            padding-top: 50px;
             padding-left: 60px;
-            margin-bottom: 30px;
-            padding-bottom: 0;
+            padding-top: 30px;
+            padding-bottom: 0px;
             align-items: center;
             
             &::before {
@@ -191,9 +192,17 @@
         }
 
         &-graphic {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
             padding-left: 60px;
             padding-top: 0;
             padding-bottom: 0;
+            margin-top: 10px;
+
+            &-left {
+                display: flex;
+            }
 
             &-logo {
                 width: 130px;
@@ -221,6 +230,33 @@
             border-radius: 100%;
         }  
     }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+
+    .menu {
+        margin-top: 10px;
+
+        &__box {
+            display: flex;
+
+            & li:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        &__item {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+            display: inline-block;
+
+           
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -232,18 +268,36 @@
 
         &-full {
             display: grid;
-            grid-template-rows: 25px 60px 60px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+        }
+
+        &-graphic {
+            display: grid;
+            padding-left: 60px;
+            padding-right: 60px;
+            grid-template-columns: 0.5fr 1fr;
+            margin-top: 0;
+            position: relative;
+
+            &-left {
+                justify-self: start;
+            }
         }
 
         &-info {
             justify-self: end;
             padding-right: 60px;
             margin-bottom: 0;
-            
         }
 
-        &-graphic {
-            padding-top: 10px;
+        .menu {
+            display: grid;
+            margin-top: 0;
+            
+            &__bottom {
+                justify-self: end;
+            }
         }
     }
 }
@@ -251,19 +305,12 @@
 @media (min-width: 1920px) {
     .header {
         &-info {
-            justify-self: end;
             padding-right: 160px;
-            margin-bottom: 0;
-            
         }
 
         &-graphic {
-            padding-top: 10px;
             padding-left: 160px;
+            padding-right: 160px;
         }
     }
 }
-    
-
-
-

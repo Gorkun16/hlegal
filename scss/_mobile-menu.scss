@@ -1,183 +1,101 @@
-/*.burger {
-    width: 32px;
-    height: 32px;
-    position: relative;
-    z-index:2;
-    overflow: hidden;
-    align-items: center;
-
-    & span {
-        width: 18px;
-        height: 2px;
-        background-color: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        left: calc(50% - 9px);
-    }
-
-    & span:nth-of-type(2) {
-        top: calc(50% - 5px);
-    }
-    & span:nth-of-type(3) {
-        top: calc(50% + 5px);
-    }
-}*/
-
-#menu__toggle {
-    opacity: 0;
-  }
-
-.menu {
-    display: none;
-
-    &--opened {
-        display: block;
-    }
-
-    &__bottom {
-        visibility: hidden;
-        background-color: rgba(50, 50, 100, 0.7);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 5;
-    }
-
-    &__btn {
-        position: fixed;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    &__btn > span,
-    &__btn > span::before,
-    &__btn > span::after {
-      display: block;
-      position: absolute;
-      width: 18px;
-      height: 2px;
-      background-color: #FFFFFF;
-    }
-
-    &__btn > span::before {
-      content: '';
-      top: -6px;
-    }
-    &__btn > span::after {
-      content: '';
-      top: 6px;
-    }
-
-    &__box {
-        width: calc(100% - 16px);
-        margin-left: 8px;
-        margin-right: 8px;
-        display: block;
-        position: fixed;
-        border-radius: 12px 12px 0px 0px;
-        padding: 64px 12px 12px 12px;
-        bottom: 0;
-        list-style: none;
-        text-align: center;
-        background-color: #FFFFFF;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        position: absolute;
-
-        & li:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
-        & li:hover {
-            background: #E6E6F0;
-        }
-    }
-
-    &__item {
-        color: #24A3FF;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        height: 43px;
-        background: #F5F5FA;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &--active {
-            color: #F0145A;
-        }
-    }
-
-    &__close {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 16px;
-        right: 16px;
-    }
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__bottom {
-    visibility: visible;
-  }
-
-
-/*@media (min-width: 768px) {
-    .header {
-        &-menu {
-            display: inline-block;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            margin-top: 30px;
-            padding-left: 60px;
+@media (max-width: 768px) {
+    #menu__toggle {
+        opacity: 0;
+      }
     
-            & a {
-                text-align: left;
-                color: #FFFFFF;
-                &:not(:last-child) {
-                    margin-right: 15px;
-                }
+    .menu {
+        &__bottom {
+            visibility: hidden;
+            background-color: rgba(50, 50, 100, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+        }
+    
+        &__btn {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            z-index: 10;
+        }
+    
+        &__btn > span,
+        &__btn > span::before,
+        &__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 2px;
+          background-color: #FFFFFF;
+        }
+    
+        &__btn > span::before {
+          content: '';
+          top: -6px;
+        }
+        &__btn > span::after {
+          content: '';
+          top: 6px;
+        }
+    
+        &__box {
+            width: calc(100% - 16px);
+            margin-left: 8px;
+            margin-right: 8px;
+            display: block;
+            position: fixed;
+            border-radius: 12px 12px 0px 0px;
+            padding: 64px 12px 12px 12px;
+            bottom: 0;
+            list-style: none;
+            text-align: center;
+            background-color: #FFFFFF;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+            position: absolute;
+    
+            & li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+    
+            & li:hover {
+                background: #E6E6F0;
+            }
+        }
+    
+        &__item {
+            color: #24A3FF;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            height: 43px;
+            background: #F5F5FA;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            &--active {
+                color: #F0145A;
             }
         }
     }
-}
-
-@media (min-width: 1024px) {
-    .header {
-        &-menu {
-            justify-self: end;
-            padding-right: 60px;
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-    }
-}
-
-@media (min-width: 1920px) {
-    .header {
-        &-menu {
-            justify-self: end;
-            padding-right: 160px;
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-    }
-}*/
     
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__bottom {
+        visibility: visible;
+      }
+}
