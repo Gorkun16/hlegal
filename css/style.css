@@ -845,6 +845,7 @@ input {
 }
 .nav-main-screen::-webkit-scrollbar {
   width: 0px;
+  display: none;
 }
 
 .h2-mobile {
@@ -1033,6 +1034,11 @@ input {
 }
 .publication:not(:last-child) {
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .publication:nth-child(n) {
+    margin-bottom: 0px;
+  }
 }
 .publication-img {
   display: block;

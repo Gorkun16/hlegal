@@ -36,6 +36,7 @@
 
     &::-webkit-scrollbar {
         width: 0px;
+        display: none;
     }
 }
 
@@ -238,6 +239,12 @@
 
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @media (min-width: 1024px) {
+        &:nth-child(n) {
+            margin-bottom: 0px;
+        }
     }
 
     &-img {
