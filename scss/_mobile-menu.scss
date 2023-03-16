@@ -3,92 +3,100 @@
 }
 
 @media (max-width: 768px) {
-    .header-graphic-menu {
-      grid-column: 2/3;
-      justify-self: center;
+  .close {
+    background-image: url(../assets/images/close.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
 
-      &-bottom {
-          visibility: hidden;
-          background-color: rgba(50, 50, 100, 0.7);
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 5;
+  .header-graphic-menu {
+    grid-column: 2/3;
+    justify-self: center;
+
+    &-bottom {
+        visibility: hidden;
+        background-color: rgba(50, 50, 100, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+    }
+    
+      &-btn {
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+          z-index: 10;
+
+          @media (min-width: 768px) {
+            visibility: hidden;
+          }
       }
     
-        &-btn {
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-            z-index: 10;
-
-            @media (min-width: 768px) {
-              visibility: hidden;
-            }
-        }
+      &-btn > span,
+      &-btn > span::before,
+      &-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background-color: #FFFFFF;
+      }
     
-        &-btn > span,
-        &-btn > span::before,
-        &-btn > span::after {
-          display: block;
-          position: absolute;
-          width: 18px;
-          height: 2px;
-          background-color: #FFFFFF;
-        }
-    
-        &-btn > span::before {
+      &-btn > span::before {
           content: '';
           top: -6px;
-        }
-        &-btn > span::after {
+      }
+      &-btn > span::after {
           content: '';
           top: 6px;
+      }
+    
+      &-box {
+          width: calc(100% - 16px);
+          margin-left: 8px;
+          margin-right: 8px;
+          display: block;
+          border-radius: 12px 12px 0px 0px;
+          padding: 64px 12px 12px 12px;
+          bottom: 0;
+          list-style: none;
+          text-align: center;
+          background-color: #FFFFFF;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          position: absolute;
+    
+          & li:not(:last-child) {
+              margin-bottom: 10px;
+          }
+    
+          & li:hover {
+              background: #E6E6F0;
+          }
+      }
+    
+      &-item {
+        color: #24A3FF;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        height: 43px;
+        background: #F5F5FA;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &-active {
+            color: #F0145A;
         }
-    
-        &-box {
-            width: calc(100% - 16px);
-            margin-left: 8px;
-            margin-right: 8px;
-            display: block;
-            position: fixed;
-            border-radius: 12px 12px 0px 0px;
-            padding: 64px 12px 12px 12px;
-            bottom: 0;
-            list-style: none;
-            text-align: center;
-            background-color: #FFFFFF;
-            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-            position: absolute;
-    
-            & li:not(:last-child) {
-                margin-bottom: 10px;
-            }
-    
-            & li:hover {
-                background: #E6E6F0;
-            }
-        }
-    
-        &-item {
-            color: #24A3FF;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 29px;
-            height: 43px;
-            background: #F5F5FA;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            &-active {
-                color: #F0145A;
-            }
-        }
-    }
+      }
+}
     
     #header-graphic-menu-toggle:checked ~ .header-graphic-menu-btn > span {
       transform: rotate(45deg);
@@ -110,6 +118,10 @@
 }
 
 @media (min-width: 768px) {
+  .close {
+    visibility: hidden;
+  }
+
   .header-graphic-menu {
     grid-row: 2/3;
 

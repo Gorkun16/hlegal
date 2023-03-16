@@ -564,6 +564,14 @@ input {
 }
 
 @media (max-width: 768px) {
+  .close {
+    background-image: url(../assets/images/close.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
   .header-graphic-menu {
     grid-column: 2/3;
     justify-self: center;
@@ -617,7 +625,6 @@ input {
     margin-left: 8px;
     margin-right: 8px;
     display: block;
-    position: fixed;
     border-radius: 12px 12px 0px 0px;
     padding: 64px 12px 12px 12px;
     bottom: 0;
@@ -674,6 +681,9 @@ input {
   }
 }
 @media (min-width: 768px) {
+  .close {
+    visibility: hidden;
+  }
   .header-graphic-menu {
     grid-row: 2/3;
   }
